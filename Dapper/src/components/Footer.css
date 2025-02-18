@@ -1,0 +1,126 @@
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 4rem 0 2rem;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .footer-top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .footer-column h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: var(--accent-color);
+  }
+  
+  .footer-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .footer-column a {
+    color: var(--white);
+    transition: var(--transition);
+  }
+  
+  .footer-column a:hover {
+    color: var(--accent-color);
+    padding-left: 5px;
+  }
+  
+  .newsletter p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+  
+  .newsletter-form input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    font-family: inherit;
+    font-size: 0.9rem;
+  }
+  
+  .newsletter-form button {
+    padding: 0 1.5rem;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: var(--white);
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+  }
+  
+  .social-icons a:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    transform: translateY(-3px);
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .payment-methods {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .footer-bottom p {
+    text-align: center;
+    color: var(--medium-gray);
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 992px) {
+    .footer-top {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footer-top {
+      grid-template-columns: 1fr;
+    }
+  }

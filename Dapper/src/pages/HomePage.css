@@ -1,0 +1,361 @@
+.home-page {
+    padding-top: 80px;
+  }
+  
+  /* Hero Slider */
+  .hero-slider {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+  }
+  
+  .slider-container {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  }
+  
+  .slide-content {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    color: var(--white);
+    max-width: 500px;
+  }
+  
+  .slide-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: slideInLeft 1s ease;
+  }
+  
+  .slide-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    animation: slideInLeft 1s ease 0.3s both;
+  }
+  
+  .slide-content .btn {
+    animation: fadeIn 1s ease 0.6s both;
+  }
+  
+  .slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .dot.active {
+    background-color: var(--white);
+  }
+  
+  /* Category Banners */
+  .category-banners {
+    padding: 5rem 0;
+  }
+  
+  .category-banners .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .banner {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--border-radius);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+    transition: var(--transition);
+  }
+  
+  .banner:hover::before {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+  }
+  
+  .banner-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: var(--white);
+  }
+  
+  .banner-content h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  /* Featured Products */
+  .featured-products {
+    padding: 3rem 0 5rem;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  .product-card {
+    transition: var(--transition);
+  }
+  
+  .product-card:hover {
+    box-shadow: var(--box-shadow);
+  }
+  
+  .product-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  }
+  
+  .product-actions {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: var(--transition);
+  }
+  
+  .product-image:hover .product-actions {
+    bottom: 0;
+  }
+  
+  .action-btn {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+  }
+  
+  .action-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+  }
+  
+  .action-btn:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+  
+  .product-info {
+    padding: 1rem;
+  }
+  
+  .product-info h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    transition: var(--transition);
+  }
+  
+  .product-info h3:hover {
+    color: var(--accent-color);
+  }
+  
+  .price {
+    font-weight: 600;
+    color: var(--secondary-color);
+  }
+  
+  /* Promotion Banner */
+  .promotion-banner {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  
+  .promotion-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  }
+  
+  .promo-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--white);
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .promo-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .promo-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .promo-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Instagram Feed */
+  .instagram-feed {
+    padding-bottom: 5rem;
+  }
+  
+  .instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+  }
+  
+  .instagram-item {
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+  }
+  
+  .instagram-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition);
+  }
+  
+  .instagram-item:hover .instagram-overlay {
+    opacity: 1;
+  }
+  
+  .instagram-overlay svg {
+    color: var(--white);
+    font-size: 2rem;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .products-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .instagram-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-slider {
+      height: 500px;
+    }
+    
+    .slide-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .category-banners .container {
+      grid-template-columns: 1fr;
+    }
+    
+    .products-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .products-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .instagram-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .slide-content {
+      left: 5%;
+      bottom: 15%;
+    }
+    
+    .slide-content h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  
+ 
