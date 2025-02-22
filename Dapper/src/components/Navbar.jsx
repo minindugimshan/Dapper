@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FaSearch, FaUser, FaHeart, FaShoppingCart } from 'react-icons/fa'
 import './Navbar.css'
-// import logo from '../assets/logo.png'
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="logo">
           <NavLink to="/">
-            <img src={logo} alt="Calista" />
+            <img src={logo} alt="Dapper" />
           </NavLink>
         </div>
 

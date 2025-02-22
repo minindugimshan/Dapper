@@ -9,7 +9,7 @@ const HomePage = () => {
   const slides = [
     {
       id: 1,
-      image: 'https://via.placeholder.com/1600x800',
+      image: '../../public/homepage slides/IMG_2659.JPG',
       title: 'Spring Collection 2025',
       subtitle: 'Discover fresh styles for the new season',
       buttonText: 'Shop Now',
@@ -17,7 +17,7 @@ const HomePage = () => {
     },
     {
       id: 2,
-      image: 'https://via.placeholder.com/1600x800',
+      image: '../../public/homepage slides/IMG_4565.HEIC',
       title: 'Super Deals Week',
       subtitle: 'Up to 50% off on selected items',
       buttonText: 'View Offers',
@@ -25,7 +25,7 @@ const HomePage = () => {
     },
     {
       id: 3,
-      image: 'https://via.placeholder.com/1600x800',
+      image: 'https://resourceboy.com/wp-content/uploads/2024/10/backside-t-shirt-mockup-worn-by-a-man.jpg',
       title: 'Exclusive Membership',
       subtitle: 'Join now for special perks and early access',
       buttonText: 'Learn More',
@@ -38,14 +38,14 @@ const HomePage = () => {
       id: 1,
       name: 'Nomad Oversize Linen Shirt',
       price: 4350,
-      image: 'https://via.placeholder.com/300x400',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw35lrIkB7cjCl6VahKBLQ7IMyD1wiZxU05w&s',
       category: 'shirts'
     },
     {
       id: 2,
       name: 'Chess Couture Oversize Relax T',
       price: 4100,
-      image: 'https://via.placeholder.com/300x400',
+      image: 'https://mrmockup.com/wp-content/uploads/2024/07/Free-Front-View-T-Shirt-Mockup-01-1024x682.jpg?x33229',
       category: 't-shirts'
     },
     {
@@ -107,7 +107,7 @@ const HomePage = () => {
       {/* Category Banners */}
       <section className="category-banners">
         <div className="container">
-          <div className="banner" style={{ backgroundImage: 'url(https://via.placeholder.com/600x300)' }}>
+          <div className="banner" style={{ backgroundImage: 'url(https://www.pinterest.com/pin/914862420424727/)' }}>
             <div className="banner-content">
               <h2>Men's Collection</h2>
               <Link to="/collections/men" className="btn outline-btn">Explore</Link>
@@ -169,7 +169,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Instagram Feed */}
+      {/* Instagram Feed
       <section className="instagram-feed">
         <div className="container">
           <div className="section-header">
@@ -189,7 +189,7 @@ const HomePage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

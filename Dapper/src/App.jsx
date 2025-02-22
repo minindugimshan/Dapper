@@ -6,7 +6,7 @@ import NewArrivals from './pages/NewArrivals'
 import ShopAll from './pages/ShopAll'
 import Collections from './pages/Collections'
 import SuperDeals from './pages/SuperDeals'
-// import About from './pages/About'
+import About from './pages/About'
 import './App.css'
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
           <Route path="/shop-all" element={<ShopAll />} />
           <Route path="/collections" element={<Collections />} />
           <Route path="/super-deals" element={<SuperDeals />} />
-          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
       <Footer />
